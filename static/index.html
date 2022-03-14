@@ -31,6 +31,10 @@
         const ins2 = new CanvasImg({
             canvas: $canvas2,
             imgSrc,
+            lineStyle: {
+                lineWidth: 2,
+                strokeColor: 'yellow'
+            },
             on: {
                 change({intersectPointer}) {
                     ins1.intersectPointer = intersectPointer
